@@ -1,0 +1,8 @@
+prefix=/home/neo/ros/ros_serial/install
+
+Name: rosserial_msgs
+Description: Description of rosserial_msgs
+Version: 0.7.5
+Cflags: -I/home/neo/ros/ros_serial/install/include
+Libs: -L/home/neo/ros/ros_serial/install/lib 
+Requires: message_runtime

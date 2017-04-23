@@ -1,0 +1,2 @@
+usb_cam
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/neo/ros/ros_cam/devel -DCMAKE_INSTALL_PREFIX=/home/neo/ros/ros_cam/install -G Unix Makefiles

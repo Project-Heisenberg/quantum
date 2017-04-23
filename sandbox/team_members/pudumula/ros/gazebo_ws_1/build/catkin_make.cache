@@ -1,0 +1,2 @@
+custom_plugin_tutorial:rrbot_control:rrbot_description:rrbot_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/neo/ros/gazebo_ws_1/devel -DCMAKE_INSTALL_PREFIX=/home/neo/ros/gazebo_ws_1/install -G Unix Makefiles

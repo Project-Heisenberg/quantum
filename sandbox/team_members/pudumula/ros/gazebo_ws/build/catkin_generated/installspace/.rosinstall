@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/neo/ros/gazebo_ws/install/setup.sh

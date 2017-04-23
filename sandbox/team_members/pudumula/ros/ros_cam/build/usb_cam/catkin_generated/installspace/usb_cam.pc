@@ -1,0 +1,8 @@
+prefix=/home/neo/ros/ros_cam/install
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.4
+Cflags: -I/home/neo/ros/ros_cam/install/include
+Libs: -L/home/neo/ros/ros_cam/install/lib -lusb_cam
+Requires: 

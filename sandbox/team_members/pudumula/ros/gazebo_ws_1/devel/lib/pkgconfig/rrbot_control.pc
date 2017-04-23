@@ -1,0 +1,8 @@
+prefix=/home/neo/ros/gazebo_ws_1/devel
+
+Name: rrbot_control
+Description: Description of rrbot_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/neo/ros/gazebo_ws_1/devel/lib 
+Requires: 
