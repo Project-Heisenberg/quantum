@@ -1,8 +1,8 @@
-# Install script for directory: /home/neo/ros/gazebo_ws/src/mybot_description
+# Install script for directory: /home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/src/mybot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/neo/ros/gazebo_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/neo/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_description.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mybot_description/cmake" TYPE FILE FILES
-    "/home/neo/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_descriptionConfig.cmake"
-    "/home/neo/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_descriptionConfig-version.cmake"
+    "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_descriptionConfig.cmake"
+    "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/build/mybot_description/catkin_generated/installspace/mybot_descriptionConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mybot_description" TYPE FILE FILES "/home/neo/ros/gazebo_ws/src/mybot_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mybot_description" TYPE FILE FILES "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/src/mybot_description/package.xml")
 endif()
 

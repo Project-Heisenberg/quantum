@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/neo/ros/gazebo_ws/src"
+source_root_dir = "/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/neo/ros/gazebo_ws/devel;/opt/ros/kinetic".split(';') if "/home/neo/ros/gazebo_ws/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/opt/ros/kinetic".split(';') if "/opt/ros/kinetic" != "" else []

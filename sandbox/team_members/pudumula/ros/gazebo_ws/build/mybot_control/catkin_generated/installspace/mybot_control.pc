@@ -1,8 +1,8 @@
-prefix=/home/neo/ros/gazebo_ws/install
+prefix=/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/install
 
 Name: mybot_control
 Description: Description of mybot_control
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/neo/ros/gazebo_ws/install/lib 
+Libs: -L/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/install/lib 
 Requires: 

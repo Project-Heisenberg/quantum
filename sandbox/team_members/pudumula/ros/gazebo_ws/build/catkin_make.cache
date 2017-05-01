@@ -1,2 +1,2 @@
 mybot_control:mybot_description:mybot_gazebo
--DCATKIN_DEVEL_PREFIX=/home/neo/ros/gazebo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/neo/ros/gazebo_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/neo/heisenberg/repo/quantum/sandbox/team_members/pudumula/ros/gazebo_ws/install -G Unix Makefiles

@@ -1,6 +1,30 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/mybot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <legacyMode>false</legacyMode>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>100</updateRate>
+      <leftJoint>left_wheel_hinge</leftJoint>
+      <rightJoint>right_wheel_hinge</rightJoint>
+      <wheelSeparation>${chassisWidth+wheelWidth}</wheelSeparation>
+      <wheelDiameter>${2*wheelRadius}</wheelDiameter>
+      <torque>20</torque>
+      <commandTopic>mybot/cmd_vel</commandTopic>
+      <odometryTopic>mybot/odom_diffdrive</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>world</robotBaseFrame>
+    </plugin>
+  </gazebo>
+
   <gazebo reference="chassis">
     <material>Gazebo/Orange</material>
   </gazebo>
@@ -9,12 +33,6 @@
     <mu1>0.0</mu1>
     <mu2>0.0</mu2>
     <material>Gazebo/Red</material>
-  </gazebo>
-
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/mybot</robotNamespace>
-    </plugin>
   </gazebo>
 
 </robot>

@@ -23,10 +23,10 @@
  	<xacro:include filename="$(find mybot_description)/urdf/materials.xacro" />
  	<xacro:include filename="$(find mybot_description)/urdf/macros.xacro" />
 
-  <link name="footprint" />
+  <link name="world" />
 
   <joint name="base_joint" type="fixed">
-    <parent link="footprint"/>
+    <parent link="world"/>
     <child link="chassis"/>
   </joint>
 
@@ -47,7 +47,7 @@
   		<inertial>
     			<origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/>
     			<mass value="${chassisMass}"/>
-    			<box_inertia m="${chassisMass}" x="${chassisLength}" y="${chassisWidth}" z="${chassisHeight}"/>
+    			<xacro:box_inertia m="${chassisMass}" x="${chassisLength}" y="${chassisWidth}" z="${chassisHeight}"/>
   		</inertial>
 	</link>
 
@@ -75,11 +75,11 @@
     <inertial>
       <origin xyz="${casterRadius-chassisLength/2} 0 ${casterRadius-chassisHeight+wheelRadius}" rpy="0 0 0"/>
       <mass value="${casterMass}"/>
-      <sphere_inertia m="${casterMass}" r="${casterRadius}"/>
+      <xacro:sphere_inertia m="${casterMass}" r="${casterRadius}"/>
     </inertial>
   </link>
 
-  <wheel lr="left" tY="1"/>
-  <wheel lr="right" tY="-1"/>
+  <xacro:wheel lr="left" tY="1"/>
+  <xacro:wheel lr="right" tY="-1"/>
 
 </robot>
